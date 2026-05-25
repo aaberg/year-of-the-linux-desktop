@@ -152,6 +152,50 @@ body {
   border-radius: 1.35rem;
 }
 
+.story-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
+}
+
+.story-image {
+  justify-self: end;
+  width: min(100%, 34rem);
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 1.8rem;
+  background: rgb(255 255 255 / 76%);
+  box-shadow: 0 24px 70px rgb(26 39 68 / 14%);
+}
+
+.story-image img {
+  display: block;
+  width: 100%;
+  max-height: 28rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.15rem;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.spec-grid span {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 78%);
+  box-shadow: 0 10px 30px rgb(26 39 68 / 6%);
+  font-size: clamp(0.95rem, 1.25vw, 1.35rem);
+  font-weight: 800;
+}
+
 h1,
 h2,
 h3,
@@ -508,6 +552,7 @@ blockquote {
 
   .slide-content.split,
   .title-layout,
+  .story-layout,
   .columns,
   .benchmark-grid,
   .timeline {
@@ -525,6 +570,14 @@ blockquote {
 
   .title-image {
     display: none;
+  }
+
+  .story-image {
+    display: none;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr;
   }
 
   .controls {
