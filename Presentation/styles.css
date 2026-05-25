@@ -179,6 +179,16 @@ body {
   border-radius: 1.15rem;
 }
 
+.screenshot-image {
+  width: min(100%, 37rem);
+}
+
+.screenshot-image img {
+  max-height: 31rem;
+  object-fit: contain;
+  background: #111827;
+}
+
 .spec-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -479,6 +489,10 @@ blockquote {
   columns: 2;
   column-gap: 3rem;
   margin-top: 2rem;
+}
+
+.large-list.single-column {
+  columns: 1;
 }
 
 .large-list li {

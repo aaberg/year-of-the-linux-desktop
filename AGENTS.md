@@ -19,7 +19,7 @@
 
 - The Sonat footer logo is referenced from `../resources/sonat-logo-footer.svg` because the deck is under `Presentation/`.
 - Slide-specific images currently live under `Presentation/resources/`, including filenames with spaces; keep quoted paths intact in HTML/CSS.
-- Current image assets include `Linux cup.jpeg`, `Lenovo X1 Carbon.png`, and `Screenshot after a day of use.png`; the screenshot was intentionally unused at last update.
+- Current image assets include `Linux cup.jpeg`, `Lenovo X1 Carbon.png`, `Screenshot Fedora.png`, and `Screenshot after a day of use.png`.
 
 ## Verification
 
