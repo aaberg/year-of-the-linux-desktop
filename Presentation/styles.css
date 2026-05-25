@@ -84,7 +84,51 @@ body {
 }
 
 .title-slide .slide-content {
-  max-width: 86%;
+  max-width: none;
+}
+
+.title-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(15rem, 0.75fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
+}
+
+.title-slide h1 {
+  font-size: clamp(3.8rem, 7vw, 7.8rem);
+}
+
+.title-image {
+  position: relative;
+  align-self: center;
+  justify-self: end;
+  width: min(100%, 25rem);
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid rgb(232 224 210 / 90%);
+  border-radius: 2rem;
+  background: rgb(255 255 255 / 74%);
+  box-shadow: 0 24px 70px rgb(26 39 68 / 16%);
+  transform: rotate(1.5deg);
+}
+
+.title-image::before {
+  position: absolute;
+  inset: -0.8rem;
+  z-index: -1;
+  content: "";
+  border-radius: 2.4rem;
+  background: var(--accent-soft);
+  transform: rotate(-4deg);
+}
+
+.title-image img {
+  display: block;
+  width: 100%;
+  max-height: 31rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.35rem;
 }
 
 h1,
@@ -442,6 +486,7 @@ blockquote {
   }
 
   .slide-content.split,
+  .title-layout,
   .columns,
   .benchmark-grid,
   .timeline {
@@ -455,6 +500,10 @@ blockquote {
 
   .large-list {
     columns: 1;
+  }
+
+  .title-image {
+    display: none;
   }
 
   .controls {
