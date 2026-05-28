@@ -172,15 +172,15 @@ body {
 }
 
 .story-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
-  gap: clamp(2rem, 4vw, 4.5rem);
-  align-items: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+    gap: clamp(2rem, 4vw, 4.5rem);
+    align-items: center;
 }
 
 .screenshot-layout {
-  grid-template-columns: minmax(0, 0.8fr) minmax(24rem, 1.2fr);
-  gap: clamp(1.5rem, 3vw, 3rem);
+    grid-template-columns: minmax(0, 0.8fr) minmax(24rem, 1.2fr);
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .story-image {
@@ -204,13 +204,13 @@ body {
 }
 
 .screenshot-image {
-  width: min(100%, 48rem);
+    width: min(100%, 48rem);
 }
 
 .screenshot-image img {
-  max-height: 37rem;
-  object-fit: contain;
-  background: #111827;
+    max-height: 37rem;
+    object-fit: contain;
+    background: #111827;
 }
 
 .spec-grid {
